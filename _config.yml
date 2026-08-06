@@ -1,0 +1,23 @@
+title: The BIT workshop on numerical analysis and optimization
+description: A workshop on numerical analysis and optimization.
+url: "https://forum-omca.org"
+
+workshop:
+  short_name: FORUM-OMCA
+  dates: 18–20 September 2026
+  location: Beijing, China
+  format: In person
+  registration_url: "#attend"
+  contact_email: corrine_wyx@163.com
+
+include:
+  - _headers
+
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+

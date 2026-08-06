@@ -1,0 +1,75 @@
+- day: Friday, 18 September
+  short: Day 1
+  theme: Arrival
+  sessions:
+    - time: "16:00"
+      type: Other
+      title: On-site registration
+      speaker: 
+    - time: "18:00"
+      type: Activity
+      title: Welcome dinner
+      speaker: All speakers
+
+- day: Saturday, 19 September
+  short: Day 2
+  theme: Talks and activities
+  sessions:
+    - time: "08:45"
+      type: Other
+      title: Opening remarks
+      speaker: Organizing committee
+    - time: "09:00"
+      type: Talk
+      title: Talk title
+      speaker: Massimiliano Fasi
+    - time: "09:45"
+      type: Talk
+      title: Talk title
+      speaker: Xiaobo Liu
+    - time: "10:30"
+      type: Break
+      title: Coffee break
+    - time: "10:45"
+      type: Talk
+      title: Talk title
+      speaker: Juan Zhang
+    - time: "11:30"
+      type: Talk
+      title: Talk title
+      speaker: Bastien Vieublé
+    - time: "12:15"
+      type: Break
+      title: Lunch
+    - time: "14:00"
+      type: Activity
+      title: Open discussions
+
+- day: Sunday, 20 September
+  short: Day 3
+  theme: Talks and ending
+  sessions:
+    - time: "09:00"
+      type: Talk
+      title: Talk title
+      speaker: Yangfeng Su
+    - time: "09:45"
+      type: Talk
+      title: Talk title
+      speaker: Shenglong Hu
+    - time: "10:30"
+      type: Break
+      title: Coffee break
+    - time: "10:45"
+      type: Talk
+      title: Talk title
+      speaker: Hongia Chen
+    - time: "11:30"
+      type: Talk
+      title: Talk title
+      speaker: Zhigang Jia
+    - time: "12:15"
+      type: Other 
+      title: Closing remarks
+      speaker: Organizing committee
+

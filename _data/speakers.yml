@@ -1,0 +1,55 @@
+- name: Massimiliano Fasi
+  initials: MF
+  affiliation: University of Leeds, UK
+  title: Talk title
+  abstract: >
+    Talk abstract.
+
+- name: Xiaobo Liu
+  initials: XL
+  affiliation: Max Planck Institute, Germany
+  title: Talk title
+  abstract: >
+    Talk abstract.
+
+- name: Juan Zhang
+  initials: JZ
+  affiliation: Xiangtan University, China
+  title: Talk title
+  abstract: >
+    Talk abstract.
+
+- name: Bastien Vieublé
+  initials: BV
+  affiliation: AMSS, Chinese Academy of Sciences, China
+  title: Talk title
+  abstract: >
+    Talk abstract.
+
+- name: Yangfeng Su
+  initials: YS
+  affiliation: Fudan University, China
+  title: Talk title
+  abstract: >
+    Talk abstract.
+
+- name: Shenglong Hu
+  initials: SH
+  affiliation: National University of Defense Technology, China
+  title: Talk title
+  abstract: >
+    Talk abstract.
+
+- name: Hongia Chen
+  initials: HC
+  affiliation: Nanchang University, China
+  title: Talk title
+  abstract: >
+    Talk abstract.
+
+- name: Zhigang Jia
+  initials: ZJ
+  affiliation: Jiangsu Normal University, China
+  title: Talk title
+  abstract: >
+    Talk abstract.

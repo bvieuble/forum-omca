@@ -1,0 +1,9 @@
+- name: School of Mathematics and Statistics, Beijing Institute of Technology
+  description: Host institution
+  url: https://english.bit.edu.cn/index.html
+  logo: /assets/images/bit-logo.webp
+
+- name: Yau Mathematical Sciences Center, Tsinghua University
+  description: Supporting organization
+  url: https://www.tsinghua.edu.cn/en/
+  logo: /assets/images/tsinghua-logo.webp

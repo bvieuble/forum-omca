@@ -1,0 +1,261 @@
+---
+layout: default
+title: BIT workshop on numerical analysis and optimization
+description: A three-day workshop on numerical analysis and optimization.
+---
+
+<header class="site-header" id="top">
+  <div class="shell header-inner">
+    <a class="wordmark" href="#top">{{ site.workshop.short_name }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#programme">Programme</a>
+      <a href="#organisers">Organisers</a>
+      <a href="#venue">Venue</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-art" aria-hidden="true">
+      <svg class="contours" viewBox="0 0 760 430" role="presentation">
+        <g fill="none" stroke="currentColor">
+          <path d="M727 208C682 91 520 34 379 62 218 94 140 207 200 307c51 85 201 117 337 79 135-37 226-99 190-178Z"/>
+          <path d="M662 211c-36-87-157-130-266-108-122 25-180 110-136 184 39 65 152 88 256 59 102-28 174-74 146-135Z"/>
+          <path d="M598 215c-27-60-111-90-188-74-84 18-124 77-93 128 28 45 107 61 179 41 70-20 121-51 102-95Z"/>
+          <path d="M539 217c-18-36-67-54-113-44-49 11-73 46-54 76 17 27 64 36 107 24 41-12 72-31 60-56Z"/>
+          <path d="M493 217c-8-16-31-24-52-20-23 5-34 21-25 35 8 13 30 17 49 11 20-5 33-14 28-26Z"/>
+        </g>
+        <polyline class="descent-line" points="227,300 272,270 305,232 354,222 398,207 445,214 474,202"/>
+        <g class="descent-points">
+          <circle cx="227" cy="300" r="4"/><circle cx="272" cy="270" r="4"/>
+          <circle cx="305" cy="232" r="4"/><circle cx="354" cy="222" r="4"/>
+          <circle cx="398" cy="207" r="4"/><circle cx="445" cy="214" r="4"/>
+          <circle cx="474" cy="202" r="5"/>
+        </g>
+      </svg>
+
+      <svg class="sparse-matrix" viewBox="0 0 360 360" role="presentation">
+        <defs>
+          <pattern id="dot-grid" width="14" height="14" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1.15" fill="currentColor"/>
+          </pattern>
+          <linearGradient id="fade-grid" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="white"/>
+            <stop offset=".72" stop-color="white" stop-opacity=".9"/>
+            <stop offset="1" stop-color="white" stop-opacity="0"/>
+          </linearGradient>
+          <mask id="grid-mask"><rect width="360" height="360" fill="url(#fade-grid)"/></mask>
+        </defs>
+        <rect width="360" height="360" fill="url(#dot-grid)" mask="url(#grid-mask)"/>
+        <g class="matrix-marks">
+          {% assign marks = "28,28 42,42 56,56 70,70 84,84 98,98 112,112 126,126 140,140 154,154 168,168 182,182 196,196 210,210 224,224 238,238 252,252 266,266 280,280 294,294 56,112 70,126 84,140 154,210 168,224 238,280 252,294 84,252 112,280 224,84 266,126 140,56 294,182" | split: " " %}
+          {% for mark in marks %}
+            {% assign xy = mark | split: "," %}
+            <rect x="{{ xy[0] }}" y="{{ xy[1] }}" width="7" height="7" rx="1"/>
+          {% endfor %}
+        </g>
+      </svg>
+    </div>
+
+    <div class="shell hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">The 2026 BIT international workshop on</p>
+        <h1>Numerical Analysis and Optimization</h1>
+        <span class="title-rule"></span>
+        <!-- <p class="lede">Numerical optimization and numerical linear algebra for the next generation of scientific discovery.</p> -->
+        <div class="hero-meta">
+          <p><span class="meta-icon" aria-hidden="true">□</span>{{ site.workshop.dates }}</p>
+          <p><span class="meta-icon pin" aria-hidden="true">○</span>{{ site.workshop.location }} · {{ site.workshop.format }}</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{ site.workshop.registration_url }}">Register to attend <span>→</span></a>
+          <a class="button button-secondary" href="#programme">View programme <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="shell section-grid">
+      <div>
+        <p class="section-kicker">About the workshop</p>
+        <h2>Optimization and linear algebra at the crossroad of scientific applications</h2>
+      </div>
+      <div class="prose">
+        <p>With the continuous development of scientific computing, artificial intelligence, and big data technologies, 
+          numerical linear algebra and optimization methods are playing an increasingly important role in solving complex
+          engineering problems, promoting interdisciplinary integration, and improving computational efficiency. This workshop 
+          aims to promote academic exchange and collaboration in this field, share the latest research progress, and 
+          discuss future research directions.</p>
+        <p>We warmly welcome all friends who are interested in numerical algebra and optimization to attend the workshop 
+          and jointly promote the development and innovation of related disciplines.</p>
+        <ul class="topic-list">
+          <li>computational mathematics</li>
+          <li>algorithm design</li>
+          <li>mathematical modeling</li>
+          <li>interdisciplinary applications in engineering</li>
+          <li>data science</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section speakers" id="speakers">
+    <div class="shell">
+      <div class="section-heading">
+        <div><p class="section-kicker">Invited speakers</p><h2>Ideas from across the field.</h2></div>
+        <p>Click a talk to read its abstract.</p>
+      </div>
+      <div class="speaker-grid">
+        {% for speaker in site.data.speakers %}
+          <article class="speaker-card">
+            <div class="speaker-initials" aria-hidden="true">{{ speaker.initials }}</div>
+            <p class="speaker-affiliation">{{ speaker.affiliation }}</p>
+            <h3>{{ speaker.name }}</h3>
+            <button class="talk-toggle" type="button" aria-expanded="false">
+              <span>{{ speaker.title }}</span><span aria-hidden="true">＋</span>
+            </button>
+            <div class="talk-abstract">
+              <p>{{ speaker.abstract }}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section programme" id="programme">
+    <div class="shell">
+      <div class="section-heading">
+        <div><p class="section-kicker">Programme</p><h2>Three days of exchange.</h2></div>
+        <p>Times shown in China Standard Time (UTC+8).</p>
+      </div>
+      <div class="day-tabs" role="tablist" aria-label="Workshop days">
+        {% for day in site.data.programme %}
+          <button id="tab-{{ forloop.index }}" role="tab" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="day-{{ forloop.index }}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}">
+            <span>{{ day.short }}</span>{{ day.day }}
+          </button>
+        {% endfor %}
+      </div>
+      {% for day in site.data.programme %}
+        <div class="day-panel" id="day-{{ forloop.index }}" role="tabpanel" aria-labelledby="tab-{{ forloop.index }}" {% unless forloop.first %}hidden{% endunless %}>
+          <div class="day-intro"><p>{{ day.day }}</p><h3>{{ day.theme }}</h3></div>
+          <ol class="schedule-list">
+            {% for session in day.sessions %}
+              <li>
+                <time>{{ session.time }}</time>
+                <div><span class="session-type">{{ session.type }}</span><h4>{{ session.title }}</h4><p>{{ session.speaker }}</p></div>
+              </li>
+            {% endfor %}
+          </ol>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section community" id="organisers">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">Behind the workshop</p>
+        <h2>Organizers and sponsors.</h2>
+      </div>
+    </div>
+
+    <div class="community-grid">
+      <div>
+        <h3>Organizing Committee</h3>
+
+        <div class="organiser-list">
+          {% for organiser in site.data.organisers %}
+            <article class="organiser">
+              <div>
+                <h4>{{ organiser.name }}</h4>
+                <p>{{ organiser.role }}</p>
+              </div>
+
+              <div>
+                <p>{{ organiser.affiliation }}</p>
+                {% if organiser.email %}
+                  <a href="mailto:{{ organiser.email }}">
+                    {{ organiser.email }}
+                  </a>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div>
+        <h3>Sponsors</h3>
+
+        <div class="sponsor-list">
+          {% for sponsor in site.data.sponsors %}
+            <a
+              class="sponsor"
+              href="{{ sponsor.url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="{{ sponsor.logo | relative_url }}"
+                alt="{{ sponsor.name }} logo"
+              >
+              <span>
+                <strong>{{ sponsor.name }}</strong>
+                <small>{{ sponsor.description }}</small>
+              </span>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="section venue" id="venue">
+    <div class="shell venue-grid">
+      <div class="venue-copy">
+        <p class="section-kicker">Venue and attendance</p>
+        <h2>Join us in Beijing.</h2>
+        <p>The workshop will take place on the campus of BIT (Haidian district).</p>
+        <div class="detail-list">
+          <div><span>Venue</span><p>Beijing Institute of Technology <br>Zhongguancun Campus, Beijing, China.</p></div>
+          <div><span>Subway</span><p>Weigongcun Station on Subway Line 4 (exit D);<br> or Suzhouqiao Station on Subway Line 12/Line 16 (exit C).</p></div>
+          <div><span>Fees</span><p>No registration fees, but travel, living, and accommodation expenses will not be supported by the workshop organizers.</p></div>
+          <div><span>Language</span><p>All talks will be in English.</p></div>
+        </div>
+      </div>
+      <aside class="attend-card" id="attend">
+        <p class="section-kicker">Registration (Deadline: 29th of August)</p>
+        <h3>Email us to register</h3>
+        <a class="button button-primary full" href="mailto:{{ site.workshop.contact_email }}?subject=Workshop registration">Request registration <span>→</span></a>
+        <h3>Or scan the QR code</h3>
+          <div class="qr-code">
+            <img
+              src="{{ '/assets/images/registration-qr.jpg' | relative_url }}"
+              alt="QR code for workshop registration"
+              width="220"
+              height="220"
+            >
+          </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <div><a class="wordmark" href="#top">{{ site.workshop.short_name }}</a><p>The Chinese Forum on Optimization, Matrix Computation, and Applications<br>(Series of scientific workshops)</p></div>
+    <div><p>{{ site.workshop.dates }} · {{ site.workshop.location }}</p><a href="mailto:{{ site.workshop.contact_email }}">{{ site.workshop.contact_email }}</a></div>
+  </div>
+</footer>
+
