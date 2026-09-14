@@ -26,26 +26,12 @@
   abstract: >
     We consider the solution of the Sylvester equation AX + XB = C in mixed precision. We derive a new iterative refinement scheme to solve perturbed quasi-triangular Sylvester equations; our rounding error analysis provides sufficient conditions for convergence and a bound on the attainable relative residual. We leverage this iterative scheme to solve the general Sylvester equation. The new algorithms compute the Schur decomposition of A and B in low precision, use the low-precision Schur factors to obtain an approximate solution to the quasi-triangular equation, and iteratively refine it to obtain a working-precision solution to the quasi-triangular equation. In order to solve the quasi-triangular equation to working precision, the unitary Schur factors of A and B must be unitary to working precision, but this is not the case if the Schur decomposition is computed in low precision. We propose two approaches to address this: one is based on re-orthonormalization in working precision, and the other on explicit inversion of the almost-unitary factors. The two mixed-precision algorithms thus obtained are tested on various Sylvester and Lyapunov equations from the literature. Our numerical experiments show that the new algorithms are at least as accurate as existing ones. Our cost analysis, on the other hand, suggests that they would typically be faster than mono-precision alternatives if implemented on hardware that natively supports low precision. This is going work with Andrii Dmytryshyn, Nicholas J. Higham, and Xiaobo Liu.
 
-- name: Zhigang Jia
-  initials: ZJ
-  affiliation: Jiangsu Normal University, China
-  title: A Novel Neural CSTV Model Joint with Quaternion-Based Group Sparse Representation for Color Image Inpainting from Structured Corruptions
-  abstract: >
-    Most of color image restoration models overlook the valid information across color spaces and the coupling between color channels, which are essential properties. To address such limitations, we present a new two-stage image restoration model: Neural cross-space total variation regularization model with quaternion-based group sparse representation (QGS-NCSTV). In the first stage, a novel neural cross-space total variation regularization functional effectively captures the cross-space information to restore color images by incorporating the perceptual characteristics of the HSV space and the structural correlations of the RGB space. In the second stage, the quaternion-based group sparse representation preserves the coupling between color channels with leveraging nonlocal self-similarity. Experimental results show QGS-NCSTV outperforms the state of-the-art methods in terms of PSNR, SSIM and UQI, where the reflection in colonoscopy images is successfully solved.
-
 - name: Hailin Sun
   initials: HS
   affiliation: Nanjing Normal University, China
-  title: TBA
+  title: Tractable Reformulations for Correlation-Robust Sell-or-Hold Problems under Marginal Ambiguity and CVaR Risk
   abstract: >
-    TBA
-
-- name: Xiaobo Liu
-  initials: XL
-  affiliation: Max Planck Institute, Germany
-  title: Mixed-Precision Algorithms for Solving Linear Matrix Equations
-  abstract: >
-    Mixed precision has become an increasingly popular strategy in numerical linear algebra and scientific computing. It performs most computations in low-precision arithmetic while selectively using higher precision to maintain the required accuracy， thereby improving performance relative to uniform-precision methods. One successful realization of this principle is mixed-precision iterative refinement (MPIR). In this talk， we present MPIR approaches for accelerating the solution of Sylvester equations and low-rank Lyapunov equations. Separate computational frameworks are discussed for the two classes of matrix equations. We provide rounding-error and computational-cost analyses and present numerical experiments demonstrating the accuracy and efficiency of the proposed methods.
+    This paper develops a tractable distributionally robust extension of the fundamental discrete two-stage stochastic optimization framework, known as the Sell- or-Hold Problem (SHP). By incorporating correlation robustness, we formulate the Correlation Robust Sell-or-Hold Problem (CR-SHP), which accounts for distributional uncertainty in asset price correlations. We show that the second-stage value function of the Sell-or-Hold Problem is submodular with respect to the random profit vector. This allows the worst-case dependence structure to be represented by an explicitly computable reversed-quantile coupling that is independent of the first-stage decision. For discrete marginals, the support size of this coupling grows linearly with the total marginal support size, thereby avoiding the Cartesian-product growth of the full joint scenario space. We further show that, for a three-point MAD ambiguity set in which the marginal MADs vary proportionally, the worst-case expected recourse is attained at the lowest admissible scale, yielding explicit marginals for the Fre ́chet-class refor- mulation. For prescribed discrete marginals, the chain-supported worst-case coupling yields an exact reduction of the robust lower-tail CVaR model to a standard SHP instance under a truncated distribution. These reductions convert the robust and risk- aware models into standard Sell-or-Hold instances, enabling approximation guarantees and scalable computation. Numerical experiments on synthetic instances and PJM electricity-market data demonstrate the scalability of the reformulation pipeline, the robustness and lower-tail benefits of the resulting policies.
 
 - name: Shenglong Hu
   initials: SH
@@ -54,19 +40,12 @@
   abstract: >
     TBA
 
-- name: Hongjia Chen
-  initials: HC
-  affiliation: Nanchang University, China
-  title: Compensated Splitting For Generalized Lyapunov Equations
+- name: Zhigang Jia
+  initials: ZJ
+  affiliation: Jiangsu Normal University, China
+  title: A Novel Neural CSTV Model Joint with Quaternion-Based Group Sparse Representation for Color Image Inpainting from Structured Corruptions
   abstract: >
-    The generalized Lyapunov equation has a natural splitting that leads to the stan- dard fixed-point iteration (sFPI) for its numerical solution. sFPI is convergent， for arbitrary given of initial guess and regardless of the constant term in the equation， if and only if the spectral radius of the associated linear operator is smaller than 1. This means that sFPI diverges generically if the spectral radius is 1 or bigger. In this paper， we propose a compensated splitting scheme that aims to reduce the spectral radius so that the resulting compensated fixed-point iteration (cFPI) has a better con- vergence property in the sense cFPI may still converge while sFPI does not or cFPI converges (much) faster than sFPI. Numerical results are presented to demonstrate the superiority of cFPI to sFPI.
-
-- name: Kuang Bai
-  initials: KB
-  affiliation: Hunan University, China
-  title: Directional Combined Approach for a Class of Bilevel Programs
-  abstract: >
-    In this talk, by employing the combined approach, we reformulate the bilevel programs into an equivalent set-constrained single-level problem, which however is nonsmooth. We introduce the directional partial calmness condition to penalize nonsmooth constraints into the objective function, then derive the directional necessary optimality condition under the directional metric subregularity/quasi-normality conditions. The directional partial calmness condition is generally weaker than the non-directional one and thus more likely to hold. Furthermore, we establish sufficient conditions for directional partial calmness. An example is provided to illustrate that the directional partial calmness condition is satisfied for the bilevel programs, whereas the non-directional condition does not hold, thereby validating the sufficiency of the conditions we have presented.
+    Most of color image restoration models overlook the valid information across color spaces and the coupling between color channels, which are essential properties. To address such limitations, we present a new two-stage image restoration model: Neural cross-space total variation regularization model with quaternion-based group sparse representation (QGS-NCSTV). In the first stage, a novel neural cross-space total variation regularization functional effectively captures the cross-space information to restore color images by incorporating the perceptual characteristics of the HSV space and the structural correlations of the RGB space. In the second stage, the quaternion-based group sparse representation preserves the coupling between color channels with leveraging nonlocal self-similarity. Experimental results show QGS-NCSTV outperforms the state of-the-art methods in terms of PSNR, SSIM and UQI, where the reflection in colonoscopy images is successfully solved.
 
 - name: Hedvig Gál
   initials: HG
@@ -82,12 +61,26 @@
   abstract: >
     Accurate and efficient computation of Floquet multipliers and subspaces is essential for analyzing limit cycles in dynamical systems and periodic steady states in radio frequency circuit simulation. This problem is typically addressed by solving a periodic linear eigenvalue problem, which is discretized from the linear time-periodic system using one-step collocation methods. Collocation methods become costly for large-scale problems. Our alternative approach is to use multistep methods. The multistep method leads to a periodic polynomial eigenvalue problem (pPEP) and introduces additional parasitic periodic eigenvalues. We prove that as the stepsize decreases, the computed Floquet multipliers and their associated invariant subspace converge at the consistency order, while the parasitic periodic eigenvalues converge to zero geometrically and hence become separated from the nonzero Floquet multipliers. A memory-efficient algorithm pTOAR is designed to solve the large-scale pPEP. Its arithmetic and memory costs are almost independent of the choice of multistep methods when the pPEP is from implicit multistep discretization. Numerical results agree with our convergence analysis, and demonstrate the efficiency of pTOAR.
 
-- name: Wen Huang
-  initials: WH
-  affiliation: Nanjing Normal University, China
-  title: An Inexact Riemannian Gradient Descent Algorithm on the Stiefel Manifold with One Newton-Schulz Iteration
+- name: Zhe Sun
+  initials: ZS
+  affiliation: Jiangxi Normal University, China
+  title: Hybrid algorithms for finding a D-stationary point of a class of structured nonsmooth DC minimization
   abstract: >
-    We propose an inexact Riemannian gradient descent algorithm on the Stiefel manifold (IRGS-StieONS) using adaptive step size， where the ``inexact'' refers to the inexactness of retraction. It is proven that one single Newton-Schulz iteration for the retraction is sufficient for global convergence and local linear convergence. Compared to the landing and augmented Lagrangian-based algorithms， the proposed algorithm is the first infeasible algorithm that permits adaptive step size and guarantees global convergence and local linear convergence under mild assumptions. Moreover， we show that the local convergence rate depends on the condition number of the Riemannian Hessian， which matches the Riemannian steepest descent algorithm. This result implies that the infeasibility in the proposed algorithm does not influence the local convergence rate. Furthermore， a stochastic gradient version of IRGD‑StieONS is proposed and is shown to achieve the same convergence rate as Riemannian stochastic gradient descent with decreasing step size. Numerical experiments demonstrate superior performance and robustness.
+    In this talk， we consider a class of structured nonsmooth difference-of-convex minimization in which the first convex component is the sum of a smooth and a nonsmooth function， while the second convex component is the supremum of finitely many convex smooth functions. The existing methods for this problem usually have weak convergence guarantees or need to solve lots of subproblems per iteration. Due to this， we propose hybrid algorithms for solving this problem in which we first compute approximate critical points and then check whether these points are approximate D-stationary points. Under suitable conditions， we prove that there exists a subsequence of iterates of which every accumulation point is a D-stationary point. Some preliminary numerical experiments are conducted to demonstrate the efficiency of the proposed algorithms.
+
+- name: Hongjia Chen
+  initials: HC
+  affiliation: Nanchang University, China
+  title: Compensated Splitting For Generalized Lyapunov Equations
+  abstract: >
+    The generalized Lyapunov equation has a natural splitting that leads to the stan- dard fixed-point iteration (sFPI) for its numerical solution. sFPI is convergent， for arbitrary given of initial guess and regardless of the constant term in the equation， if and only if the spectral radius of the associated linear operator is smaller than 1. This means that sFPI diverges generically if the spectral radius is 1 or bigger. In this paper， we propose a compensated splitting scheme that aims to reduce the spectral radius so that the resulting compensated fixed-point iteration (cFPI) has a better con- vergence property in the sense cFPI may still converge while sFPI does not or cFPI converges (much) faster than sFPI. Numerical results are presented to demonstrate the superiority of cFPI to sFPI.
+
+- name: Weiguo Gao
+  initials: WG
+  affiliation: Fudan University, China
+  title: Toward theoretical insights into diffusion trajectory distillation via operator merging
+  abstract: >
+    Diffusion trajectory distillation accelerates sampling by training a student model to approximate the multi-step denoising trajectories of a pretrained teacher model using far fewer steps. Despite strong empirical results, the trade-off between distillation strategy and generative quality remains poorly understood. We provide a theoretical characterization by reinterpreting trajectory distillation as an operator merging problem, differentiating our analysis between two distinct regimes. In the linear Gaussian regime, where approximation error is zero, we isolate optimization error, specifically signal shrinkage driven by finite training time, as the primary bottleneck. This characterization allows us to derive the theoretically optimal merging strategy, which exhibits a variance-driven phase transition and is computable via a Pareto dynamic programming algorithm. In the nonlinear Gaussian mixture regime, we prove that distilling composite steps incurs unavoidable approximation error due to the exponential growth of mixture components, and we quantify how these errors amplify across merges. Together, these results clarify the distinct theoretical mechanisms governing each regime and provide principled guidance for method selection.
 
 - name: Meiyue Shao
   initials: MS
@@ -96,19 +89,20 @@
   abstract: >
     Householder orthogonalization plays an important role in numerical linear algebra.  It attains perfect orthogonality regardless of the conditioning of the input.  However, in the context of a non-standard inner product, it becomes difficult to apply Householder orthogonalization, partly due to the lack of an initial orthonormal basis.  We propose strategies to overcome this obstacle and discuss algorithms and variants of Householder orthogonalization with a non-standard inner product.  Theoretical analysis and numerical experiments demonstrate that our approach is numerically stable under mild assumptions.
 
-- name: Weiguo Gao
-  initials: WG
-  affiliation: Fudan University, China
-  title: TBA
+- name: Xiaobo Liu
+  initials: XL
+  affiliation: Max Planck Institute, Germany
+  title: Mixed-Precision Algorithms for Solving Linear Matrix Equations
   abstract: >
-    TBA
+    Mixed precision has become an increasingly popular strategy in numerical linear algebra and scientific computing. It performs most computations in low-precision arithmetic while selectively using higher precision to maintain the required accuracy， thereby improving performance relative to uniform-precision methods. One successful realization of this principle is mixed-precision iterative refinement (MPIR). In this talk， we present MPIR approaches for accelerating the solution of Sylvester equations and low-rank Lyapunov equations. Separate computational frameworks are discussed for the two classes of matrix equations. We provide rounding-error and computational-cost analyses and present numerical experiments demonstrating the accuracy and efficiency of the proposed methods.
 
-- name: Zhe Sun
-  initials: ZS
-  affiliation: Jiangxi Normal University, China
-  title: Hybrid algorithms for finding a D-stationary point of a class of structured nonsmooth DC minimization
+- name: Wen Huang
+  initials: WH
+  affiliation: Nanjing Normal University, China
+  title: An Inexact Riemannian Gradient Descent Algorithm on the Stiefel Manifold with One Newton-Schulz Iteration
   abstract: >
-    In this talk， we consider a class of structured nonsmooth difference-of-convex minimization in which the first convex component is the sum of a smooth and a nonsmooth function， while the second convex component is the supremum of finitely many convex smooth functions. The existing methods for this problem usually have weak convergence guarantees or need to solve lots of subproblems per iteration. Due to this， we propose hybrid algorithms for solving this problem in which we first compute approximate critical points and then check whether these points are approximate D-stationary points. Under suitable conditions， we prove that there exists a subsequence of iterates of which every accumulation point is a D-stationary point. Some preliminary numerical experiments are conducted to demonstrate the efficiency of the proposed algorithms.
+    We propose an inexact Riemannian gradient descent algorithm on the Stiefel manifold (IRGS-StieONS) using adaptive step size， where the ``inexact'' refers to the inexactness of retraction. It is proven that one single Newton-Schulz iteration for the retraction is sufficient for global convergence and local linear convergence. Compared to the landing and augmented Lagrangian-based algorithms， the proposed algorithm is the first infeasible algorithm that permits adaptive step size and guarantees global convergence and local linear convergence under mild assumptions. Moreover， we show that the local convergence rate depends on the condition number of the Riemannian Hessian， which matches the Riemannian steepest descent algorithm. This result implies that the infeasibility in the proposed algorithm does not influence the local convergence rate. Furthermore， a stochastic gradient version of IRGD‑StieONS is proposed and is shown to achieve the same convergence rate as Riemannian stochastic gradient descent with decreasing step size. Numerical experiments demonstrate superior performance and robustness.
+
 
 - name: Bastien Vieublé
   initials: BV
@@ -116,5 +110,6 @@
   title: Comparison of the convergence rates of iterative refinement and GMRES
   abstract: >
     Both iterative refinement and GMRES can be used to improve the accuracy of inaccurate linear solvers. To a certain extent, the literature features indirect arguments supporting the convergence superiority of GMRES over iterative refinement. However, because these arguments do not use the iterative refinement terminology or address rounding errors and approximations, the connection between GMRES and iterative refinement was never made evident. In this context, we propose to compare theoretically and experimentally the convergence rates of iterative refinement and GMRES. We showcase why and in which cases GMRES corrects linear solvers faster. We further explain that one can preserve the complexity advantage of iterative refinement while improving its convergence rate. 
+
 
 
