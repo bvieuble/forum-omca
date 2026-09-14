@@ -1,55 +1,120 @@
-- name: Massimiliano Fasi
-  initials: MF
-  affiliation: University of Leeds, UK
-  title: Talk title
-  abstract: >
-    Talk abstract.
-
-- name: Xiaobo Liu
-  initials: XL
-  affiliation: Max Planck Institute, Germany
-  title: Talk title
-  abstract: >
-    Talk abstract.
-
 - name: Juan Zhang
   initials: JZ
   affiliation: Xiangtan University, China
-  title: Talk title
-  abstract: >
-    Talk abstract.
+  title: Data-Driven Prediction of Optimal Iterative Parameters and Its Applications in Large-Scale Linear Systems
+  abstract: > 
+    Iterative methods with parameters play a crucial role in solving linear systems, and how to select optimal splitting parameters remains a key challenge. In this talk, we introduce a data-driven approach, Gaussian Process Regression (GPR), for predicting optimal iterative parameters. As one application, we present a mixed-precision general alternating-direction implicit method (MP-GADI) and develop rounding error analyses of MP-GADI for large-scale sparse linear systems. Numerical experiments demonstrate that, when using Bfloat16 precision, MP-GADI achieves a 2.5x speedup on the hundred-million-scale system compared to a full double-precision implementation. As another application, we apply a GPR-based algebraic multigrid (AMG) parameter optimization strategy to several typical partial differential equations (PDEs), including the Poisson equation, diffusion equation, and Helmholtz equation. Numerical results show that our proposed methods can save an enormous amount of time in selecting relatively optimal splitting parameters compared with existing methods.
 
-- name: Bastien Vieublé
-  initials: BV
-  affiliation: AMSS, Chinese Academy of Sciences, China
-  title: Talk title
+- name: Yong Xia
+  initials: YX
+  affiliation: Beihang University, China
+  title: A Modern Optimization View of the Power Method
   abstract: >
-    Talk abstract.
+    The computation of the dominant eigenpair for symmetric positive semidefinite matrices is fundamental in numerical optimization. This work shifts the paradigm from the classical Rayleigh quotient to an unconstrained difference formulation, whose global optimum recovers the dominant eigenpair. Within this framework, we prove that gradient descent with a constant step-size α ∈ (0,1) converges almost surely to the global optimum at a local linear rate. This analysis thereby reinterprets the classical power method as the conservative special case α = 1/2 and rigorously establishes its asymptotic sub-optimality. To advance this first-order scheme, we propose the Split-Merge algorithm based on the majorization-minimization principle. After splitting the matrix, we introduce auxiliary vectors to effectively merge the decomposition factors, resulting in a matrix-free and parameter-free iteration that captures tighter curvature information. We establish that SplitMerge converges almost surely to a global minimizer, and show that the iteration exhibits a spectral peeling mechanism that suppresses the targeted eigenspace, potentially surpassing the static linear rate of power iterations. Numerical evaluations across synthetic and real-world datasets confirm that our method has scalable efficiency, achieving speed-ups exceeding 10× over the power method, with performance comparable to subspace iterations.
 
-- name: Yangfeng Su
-  initials: YS
-  affiliation: Fudan University, China
-  title: Talk title
+- name: Huifu Xu
+  initials: HX
+  affiliation: The Chinese University of Hong Kong, China
+  title: A Composite Bayesian Risk--Distributionally Robust Optimization Model for Stochastic Programming with Elliptical Distribution Ambiguity
   abstract: >
-    Talk abstract.
+    In this paper, we study a one-stage distributionally robust optimization (DRO) problem where the underlying random vector follows an elliptical distribution with unknown location and shape parameters, as well as an unknown distribution of the radial random variable. The only available information consists of samples of the random vector. To address this problem, we propose a framework that combines a Bayesian learning approach with a traditional DRO methodology to simultaneously handle epistemic uncertainty in the location and shape parameters and Knightian uncertainty in the radial distribution. A key challenge arises from the fact that the density function of an elliptically distributed random vector, when it exists, depends not only on the location and shape parameters but also on the (unknown) density generator associated with the radial variable. As a result, classical likelihood-based Bayesian methods are not applicable. To overcome this difficulty, we develop two structured Gibbs inference procedures—one for the location parameter and the other for the shape matrix—both constructed via estimating equations that are invariant to the radial component and hence independent of its distributional form. We establish strong posterior consistency of the resulting Gibbs posteriors. Leveraging the posterior distribution of the location and shape parameters, we transform the observed data into pseudo-samples of the radial variable and use these samples to construct an ambiguity set for its distribution. We then propose a risk minimization model in which the inner problem considers the worst-case distribution of the radial variable within the ambiguity set, while the outer problem applies a risk measure to evaluate the decision risk induced by the remaining epistemic uncertainty captured by the posterior distribution. This leads to a composite Bayesian-risk distributionally robust optimization (CBR-DRO) model. To solve the proposed model, we develop a cutting-plane algorithm. Preliminary numerical experiments demonstrate that the proposed approach outperforms several baseline methods, including the sample average approximation and generic DRO models.
 
-- name: Shenglong Hu
-  initials: SH
-  affiliation: National University of Defense Technology, China
-  title: Talk title
+- name: Massimiliano Fasi
+  initials: MF
+  affiliation: University of Leeds, UK
+  title: Mixed-precision preconditioners for CholeskyQR
   abstract: >
-    Talk abstract.
-
-- name: Hongia Chen
-  initials: HC
-  affiliation: Nanchang University, China
-  title: Talk title
-  abstract: >
-    Talk abstract.
+    We consider the solution of the Sylvester equation AX + XB = C in mixed precision. We derive a new iterative refinement scheme to solve perturbed quasi-triangular Sylvester equations; our rounding error analysis provides sufficient conditions for convergence and a bound on the attainable relative residual. We leverage this iterative scheme to solve the general Sylvester equation. The new algorithms compute the Schur decomposition of A and B in low precision, use the low-precision Schur factors to obtain an approximate solution to the quasi-triangular equation, and iteratively refine it to obtain a working-precision solution to the quasi-triangular equation. In order to solve the quasi-triangular equation to working precision, the unitary Schur factors of A and B must be unitary to working precision, but this is not the case if the Schur decomposition is computed in low precision. We propose two approaches to address this: one is based on re-orthonormalization in working precision, and the other on explicit inversion of the almost-unitary factors. The two mixed-precision algorithms thus obtained are tested on various Sylvester and Lyapunov equations from the literature. Our numerical experiments show that the new algorithms are at least as accurate as existing ones. Our cost analysis, on the other hand, suggests that they would typically be faster than mono-precision alternatives if implemented on hardware that natively supports low precision. This is going work with Andrii Dmytryshyn, Nicholas J. Higham, and Xiaobo Liu.
 
 - name: Zhigang Jia
   initials: ZJ
   affiliation: Jiangsu Normal University, China
-  title: Talk title
+  title: A Novel Neural CSTV Model Joint with Quaternion-Based Group Sparse Representation for Color Image Inpainting from Structured Corruptions
   abstract: >
-    Talk abstract.
+    Most of color image restoration models overlook the valid information across color spaces and the coupling between color channels, which are essential properties. To address such limitations, we present a new two-stage image restoration model: Neural cross-space total variation regularization model with quaternion-based group sparse representation (QGS-NCSTV). In the first stage, a novel neural cross-space total variation regularization functional effectively captures the cross-space information to restore color images by incorporating the perceptual characteristics of the HSV space and the structural correlations of the RGB space. In the second stage, the quaternion-based group sparse representation preserves the coupling between color channels with leveraging nonlocal self-similarity. Experimental results show QGS-NCSTV outperforms the state of-the-art methods in terms of PSNR, SSIM and UQI, where the reflection in colonoscopy images is successfully solved.
+
+- name: Hailin Sun
+  initials: HS
+  affiliation: Nanjing Normal University, China
+  title: TBA
+  abstract: >
+    TBA
+
+- name: Xiaobo Liu
+  initials: XL
+  affiliation: Max Planck Institute, Germany
+  title: Mixed-Precision Algorithms for Solving Linear Matrix Equations
+  abstract: >
+    Mixed precision has become an increasingly popular strategy in numerical linear algebra and scientific computing. It performs most computations in low-precision arithmetic while selectively using higher precision to maintain the required accuracy， thereby improving performance relative to uniform-precision methods. One successful realization of this principle is mixed-precision iterative refinement (MPIR). In this talk， we present MPIR approaches for accelerating the solution of Sylvester equations and low-rank Lyapunov equations. Separate computational frameworks are discussed for the two classes of matrix equations. We provide rounding-error and computational-cost analyses and present numerical experiments demonstrating the accuracy and efficiency of the proposed methods.
+
+- name: Shenglong Hu
+  initials: SH
+  affiliation: National University of Defense Technology, China
+  title: TBA
+  abstract: >
+    TBA
+
+- name: Hongjia Chen
+  initials: HC
+  affiliation: Nanchang University, China
+  title: Compensated Splitting For Generalized Lyapunov Equations
+  abstract: >
+    The generalized Lyapunov equation has a natural splitting that leads to the stan- dard fixed-point iteration (sFPI) for its numerical solution. sFPI is convergent， for arbitrary given of initial guess and regardless of the constant term in the equation， if and only if the spectral radius of the associated linear operator is smaller than 1. This means that sFPI diverges generically if the spectral radius is 1 or bigger. In this paper， we propose a compensated splitting scheme that aims to reduce the spectral radius so that the resulting compensated fixed-point iteration (cFPI) has a better con- vergence property in the sense cFPI may still converge while sFPI does not or cFPI converges (much) faster than sFPI. Numerical results are presented to demonstrate the superiority of cFPI to sFPI.
+
+- name: Kuang Bai
+  initials: KB
+  affiliation: Hunan University, China
+  title: Directional Combined Approach for a Class of Bilevel Programs
+  abstract: >
+    In this talk, by employing the combined approach, we reformulate the bilevel programs into an equivalent set-constrained single-level problem, which however is nonsmooth. We introduce the directional partial calmness condition to penalize nonsmooth constraints into the objective function, then derive the directional necessary optimality condition under the directional metric subregularity/quasi-normality conditions. The directional partial calmness condition is generally weaker than the non-directional one and thus more likely to hold. Furthermore, we establish sufficient conditions for directional partial calmness. An example is provided to illustrate that the directional partial calmness condition is satisfied for the bilevel programs, whereas the non-directional condition does not hold, thereby validating the sufficiency of the conditions we have presented.
+
+- name: Hedvig Gál
+  initials: HG
+  affiliation: Budapest University of Technology and Economics, Hungary
+  title: Convergence of semi-convex functions in CAT(1)-spaces
+  abstract: >
+    The work generalize the results of Kuwae–Shioya and Bačák on Mosco convergence established for Cartan Alexandrov Topogonov spaces (or Hadamard spaces) to the CAT(1)-setting, so that Mosco convergence implies convergence of resolvents, which in turn imply convergence of gradient flows for lower-semicontinuous semi-convex functions. The techniques utilize Moreau-Yosida approximation and weak convergence in CAT(1)-spaces and also cover asymptotic relations of sequences of such spaces introduced by Kuwae-Shioya, including Gromov–Hausdorff limits. The present work is published in Springer journal of Calculus of Variations and Partial Differential Equations.
+
+- name: Yangfeng Su
+  initials: YS
+  affiliation: Fudan University, China
+  title: Multistep methods for Floquet multipliers and subspaces
+  abstract: >
+    Accurate and efficient computation of Floquet multipliers and subspaces is essential for analyzing limit cycles in dynamical systems and periodic steady states in radio frequency circuit simulation. This problem is typically addressed by solving a periodic linear eigenvalue problem, which is discretized from the linear time-periodic system using one-step collocation methods. Collocation methods become costly for large-scale problems. Our alternative approach is to use multistep methods. The multistep method leads to a periodic polynomial eigenvalue problem (pPEP) and introduces additional parasitic periodic eigenvalues. We prove that as the stepsize decreases, the computed Floquet multipliers and their associated invariant subspace converge at the consistency order, while the parasitic periodic eigenvalues converge to zero geometrically and hence become separated from the nonzero Floquet multipliers. A memory-efficient algorithm pTOAR is designed to solve the large-scale pPEP. Its arithmetic and memory costs are almost independent of the choice of multistep methods when the pPEP is from implicit multistep discretization. Numerical results agree with our convergence analysis, and demonstrate the efficiency of pTOAR.
+
+- name: Wen Huang
+  initials: WH
+  affiliation: Nanjing Normal University, China
+  title: An Inexact Riemannian Gradient Descent Algorithm on the Stiefel Manifold with One Newton-Schulz Iteration
+  abstract: >
+    We propose an inexact Riemannian gradient descent algorithm on the Stiefel manifold (IRGS-StieONS) using adaptive step size， where the ``inexact'' refers to the inexactness of retraction. It is proven that one single Newton-Schulz iteration for the retraction is sufficient for global convergence and local linear convergence. Compared to the landing and augmented Lagrangian-based algorithms， the proposed algorithm is the first infeasible algorithm that permits adaptive step size and guarantees global convergence and local linear convergence under mild assumptions. Moreover， we show that the local convergence rate depends on the condition number of the Riemannian Hessian， which matches the Riemannian steepest descent algorithm. This result implies that the infeasibility in the proposed algorithm does not influence the local convergence rate. Furthermore， a stochastic gradient version of IRGD‑StieONS is proposed and is shown to achieve the same convergence rate as Riemannian stochastic gradient descent with decreasing step size. Numerical experiments demonstrate superior performance and robustness.
+
+- name: Meiyue Shao
+  initials: MS
+  affiliation: Fudan University, China
+  title: Householder orthogonalization with a non-standard inner product
+  abstract: >
+    Householder orthogonalization plays an important role in numerical linear algebra.  It attains perfect orthogonality regardless of the conditioning of the input.  However, in the context of a non-standard inner product, it becomes difficult to apply Householder orthogonalization, partly due to the lack of an initial orthonormal basis.  We propose strategies to overcome this obstacle and discuss algorithms and variants of Householder orthogonalization with a non-standard inner product.  Theoretical analysis and numerical experiments demonstrate that our approach is numerically stable under mild assumptions.
+
+- name: Weiguo Gao
+  initials: WG
+  affiliation: Fudan University, China
+  title: TBA
+  abstract: >
+    TBA
+
+- name: Zhe Sun
+  initials: ZS
+  affiliation: Jiangxi Normal University, China
+  title: Hybrid algorithms for finding a D-stationary point of a class of structured nonsmooth DC minimization
+  abstract: >
+    In this talk， we consider a class of structured nonsmooth difference-of-convex minimization in which the first convex component is the sum of a smooth and a nonsmooth function， while the second convex component is the supremum of finitely many convex smooth functions. The existing methods for this problem usually have weak convergence guarantees or need to solve lots of subproblems per iteration. Due to this， we propose hybrid algorithms for solving this problem in which we first compute approximate critical points and then check whether these points are approximate D-stationary points. Under suitable conditions， we prove that there exists a subsequence of iterates of which every accumulation point is a D-stationary point. Some preliminary numerical experiments are conducted to demonstrate the efficiency of the proposed algorithms.
+
+- name: Bastien Vieublé
+  initials: BV
+  affiliation: AMSS, Chinese Academy of Sciences, China
+  title: Comparison of the convergence rates of iterative refinement and GMRES
+  abstract: >
+    Both iterative refinement and GMRES can be used to improve the accuracy of inaccurate linear solvers. To a certain extent, the literature features indirect arguments supporting the convergence superiority of GMRES over iterative refinement. However, because these arguments do not use the iterative refinement terminology or address rounding errors and approximations, the connection between GMRES and iterative refinement was never made evident. In this context, we propose to compare theoretically and experimentally the convergence rates of iterative refinement and GMRES. We showcase why and in which cases GMRES corrects linear solvers faster. We further explain that one can preserve the complexity advantage of iterative refinement while improving its convergence rate. 
+
+

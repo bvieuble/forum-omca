@@ -1,75 +1,115 @@
 - day: Friday, 18 September
   short: Day 1
-  theme: To Be Announced
+  theme: Day 1
   sessions:
-    # - time: "16:00"
-    #   type: Other
-    #   title: On-site registration
-    #   speaker: 
-    # - time: "18:00"
-    #   type: Activity
-    #   title: Welcome dinner
-    #   speaker: All speakers
+    - time: "16:00"
+      type: Other
+      title: On-site registration
+      speaker: 
+    - time: "18:00"
+      type: Meal
+      title: Welcome dinner
 
 - day: Saturday, 19 September
   short: Day 2
-  theme: To Be Announced
+  theme: Day 2
   sessions:
-    # - time: "08:45"
-    #   type: Other
-    #   title: Opening remarks
-    #   speaker: Organizing committee
-    # - time: "09:00"
-    #   type: Talk
-    #   title: Talk title
-    #   speaker: Massimiliano Fasi
-    # - time: "09:45"
-    #   type: Talk
-    #   title: Talk title
-    #   speaker: Xiaobo Liu
-    # - time: "10:30"
-    #   type: Break
-    #   title: Coffee break
-    # - time: "10:45"
-    #   type: Talk
-    #   title: Talk title
-    #   speaker: Juan Zhang
-    # - time: "11:30"
-    #   type: Talk
-    #   title: Talk title
-    #   speaker: Bastien Vieublé
-    # - time: "12:15"
-    #   type: Break
-    #   title: Lunch
-    # - time: "14:00"
-    #   type: Activity
-    #   title: Open discussions
+    - time: "08:30"
+      type: Other
+      title: Opening remarks
+      speaker: Qingna Li
+    - time: "08:35"
+      type: Talk
+      title: Data-Driven Prediction of Optimal Iterative Parameters and Its Applications in Large-Scale Linear Systems
+      speaker: Juan Zhang
+    - time: "09:15"
+      type: Talk
+      title: A Modern Optimization View of the Power Method
+      speaker: Yong Xia
+    - time: "09:55"
+      type: Break
+      title: Coffee break
+    - time: "10:15"
+      type: Talk
+      title: A Composite Bayesian Risk--Distributionally Robust Optimization Model for Stochastic Programming with Elliptical Distribution Ambiguity (Online)
+      speaker: Huifu Xu
+    - time: "10:55"
+      type: Talk
+      title: Mixed-Precision Algorithms for the Sylvester Equation
+      speaker: Massimiliano Fasi
+    - time: "10:55"
+      type: Talk
+      title: A Novel Neural CSTV Model Joint with Quaternion-Based Group Sparse Representation for Color Image Inpainting from Structured Corruptions
+      speaker: Zhigang Jia
+    - time: "12:15"
+      type: Meal
+      title: Lunch
+    - time: "14:00"
+      type: Talk
+      title: TBA
+      speaker: Hailin Sun
+    - time: "14:40"
+      type: Talk
+      title: Mixed-Precision Algorithms for Solving Linear Matrix Equations
+      speaker: Xiaobo Liu
+    - time: "15:20"
+      type: Talk
+      title: TBA
+      speaker: Shenglong Hu
+    - time: "16:00"
+      type: Break
+      title: Coffee break
+    - time: "16:20"
+      type: Talk
+      title: Hybrid algorithms for finding a D-stationary point of a class of structured nonsmooth DC minimization
+      speaker: Zhe Sun
+    - time: "17:00"
+      type: Talk
+      title: Directional Combined Approach for a Class of Bilevel Programs
+      speaker: Kuang Bai
+    - time: "17:40"
+      type: Talk
+      title: Convergence of semi-convex functions in CAT(1)-spaces
+      speaker: Hedvig Gál
+    - time: "18:20"
+      type: Meal
+      title: Dinner
 
 - day: Sunday, 20 September
   short: Day 3
-  theme: To Be Announced
+  theme: Day 3
   sessions:
-    # - time: "09:00"
-    #   type: Talk
-    #   title: Talk title
-    #   speaker: Yangfeng Su
-    # - time: "09:45"
-    #   type: Talk
-    #   title: Talk title
-    #   speaker: Shenglong Hu
-    # - time: "10:30"
-    #   type: Break
-    #   title: Coffee break
-    # - time: "10:45"
-    #   type: Talk
-    #   title: Talk title
-    #   speaker: Hongia Chen
-    # - time: "11:30"
-    #   type: Talk
-    #   title: Talk title
-    #   speaker: Zhigang Jia
-    # - time: "12:15"
-    #   type: Other 
-    #   title: Closing remarks
-    #   speaker: Organizing committee
-
+    - time: "08:30"
+      type: Talk
+      title: Multistep methods for Floquet multipliers and subspaces
+      speaker: Yangfeng Su
+    - time: "09:10"
+      type: Talk
+      title: An Inexact Riemannian Gradient Descent Algorithm on the Stiefel Manifold with One Newton-Schulz Iteration
+      speaker: Wen Huang
+    - time: "09:50"
+      type: Talk
+      title: Householder orthogonalization with a non-standard inner product
+      speaker: Meiyue Shao
+    - time: "10:30"
+      type: Break
+      title: Coffee break
+    - time: "10:50"
+      type: Talk
+      title: TBA
+      speaker: Weiguo Gao
+    - time: "11:30"
+      type: Talk
+      title: Compensated Splitting For Generalized Lyapunov Equations
+      speaker: Hongjia Chen
+    - time: "12:10"
+      type: Talk
+      title: Comparison of the convergence rates of iterative refinement and GMRES
+      speaker: Bastien Vieublé
+    - time: "12:50"
+      type: Other
+      title: Closing remarks
+      speaker: Qingna Li
+    - time: "13:00"
+      type: Meal
+      title: Lunch

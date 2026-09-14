@@ -1,3 +1,15 @@
+- name: Françoise Tisseur
+  affiliation: The University of Manchester
+  role: Scientific committee
+
+- name: Houduo Qi
+  affiliation: The Hong Kong Polytechnic University
+  role: Scientific committee
+
+- name: Weiguo Gao
+  affiliation: Fudan University
+  role: Scientific committee
+
 - name: Xin Liu
   affiliation: AMSS, Chinese Academy of Sciences
   role: Scientific committee
@@ -8,7 +20,7 @@
 
 - name: Bastien Vieublé
   affiliation: AMSS, Chinese Academy of Sciences
-  role: Scientific committee
+  role: Scientific committee and local organizer
 
 - name: Jiani Li
   affiliation: Beijing Institute of Technology
